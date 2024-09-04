@@ -1,4 +1,19 @@
 public class StreamChecker {
+    /**
+     * Use trie as suffix trie.
+     * store all the words in reverse order. Mark last(first char) as end of trie
+     * when new character comes in check the first char if its present return true
+     * or false.
+     Insert
+     Time - o(l) lenth of incoming word
+
+     Find
+     Time - o(k) k is max length of any of the String
+
+     Query
+     * Time complexity -o(k) k Total number of calls made ot query
+     * Space complexity - o(nk) n number of words, k is lenght of words
+     */
     class TrieNode {
         TrieNode[] children;
         boolean isEnd;
